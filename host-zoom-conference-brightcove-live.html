@@ -1,67 +1,44 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}
-    <aside class="bcls-aside bcls-aside--information">To integrate and stream a Zoom meeting directly from Brightcove Live, please visit the 
-  {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}      
-        <a href="/live/live-module/zoom-live-integration.html" target="_blank">following documentation</a>.
-  {% endif %}
-{% if site.product_short == "Live" %}
-      <a href="/live-module/zoom-live-integration.html" target="_blank">following documentation</a>.
-        {% endif %}
-      </aside>
-  </summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>Zoom Video Communications is a technology company that offers a cloud-based, peer-to-peer software platform for teleconferencing, telecommuting, and distance education. To reach a larger audience, you can leverage Brightcove Live to stream your meeting for others to see. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Steps">Steps</h2>
-    <p> Follow these steps to host a conference or webinar to Brightcove Live: </p>
+  <h1>{{page.title}}</h1> <summary>{{ page.description }}<aside class="bcls-aside bcls-aside--information"> Zoom ミーティングを Brightcove Live から直接統合してストリーミングするには、{% if site.product_short == &quot;Video Cloud&quot; or site.product_short == "Beacon" or site.product_short == "CorpTV" %} にアクセスしてください。<a href="/live/live-module/zoom-live-integration.html" target="_blank">次のドキュメント</a>. {% endif %} {% if site.product_short == &quot;Live&quot; %}<a href="/live-module/zoom-live-integration.html" target="_blank">次のドキュメント</a>. {% endif %} </aside> </summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>Zoom Video Communications は、電話会議、在宅勤務、遠隔教育のためのクラウドベースのピアツーピアソフトウェアプラットフォームを提供するテクノロジー企業です。より多くのオーディエンスにリーチするために、Brightcoveライブを活用してミーティングをストリーミングして、他のユーザーが見られるようにすることができます。 </p>  </section><section class="bcls-section">
+    <h2 id="Steps">ステップ</h2>
+    <p> Brightcoveライブで会議やウェビナーを主催するには、次の手順に従います。 </p>
     <ol class="bcls-tasklist-restart">
-      <li>For <strong>Zoom conferences</strong>, do the following:
+      <li>為に<strong>ズーム会議</strong>、 以下をせよ：
         <ol>
-          <li> Navigate to your Zoom Meeting <a target="_blank" href="https://zoom.us/profile/setting">Settings</a> and scroll to the <strong>In Meeting (Advanced</strong> section. </li>
-          <li> Enable the <strong>Allow live streaming meetings</strong> option by clicking the toggle switch. If you don’t see this option, talk to your Zoom Account Manager about how to add this feature to your account. </li>
-          <li>Select <strong>Custom Live Streaming Service</strong>, and optionally enter text notes in the box.
-            <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/0.png" /></figure>
+          <li> Zoomミーティングに移動します<a target="_blank" href="https://zoom.us/profile/setting">設定</a>スクロールして<strong>会議中 (上級者向け)</strong>セクション。 </li>
+          <li> 有効にする<strong>ライブ ストリーミング ミーティングを許可する</strong>トグルスイッチをクリックしてオプションを選択します。このオプションが表示されない場合は、Zoomアカウントマネージャにこの機能をアカウントに追加する方法についてお問い合わせください。 </li>
+          <li>選択する<strong>カスタム ライブ ストリーミング サービス</strong>をクリックし、必要に応じてボックスにテキスト ノートを入力します。 <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/0.png" /></figure>
           </li>
         </ol>
-        <p>For <strong>Zoom webinars</strong>, do the following:</p>
+        <p>為に<strong>ズームウェビナー</strong>、 以下をせよ：</p>
         <ol>
-          <li> Navigate to your our Zoom Webinar Settings and scroll to the <strong>In Webinar Settings</strong> section. </li>
-          <li> Enable the ​​<strong>Allow hosts to live stream their webinars</strong> option. </li>
-          <li>Select <strong>Custom Streaming Service</strong>, and save. </li>
+          <li> Zoomウェビナー設定に移動し、スクロールして<strong>ウェビナー設定で</strong>セクション。 </li>
+          <li> を有効にする<strong>主催者がウェビナーをライブ ストリーミングできるようにする</strong>オプション。 </li>
+          <li>選択する<strong>カスタム ストリーミング サービス</strong>、保存します。 </li>
         </ol>
       </li>
-        {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}
-      <li>In Studio, create a <a target="_blank" href="/live/live-module/creating-and-managing-live-events-using-live-module.html">live event using the Live module</a>.
-    {% endif %}
-          {% if site.product_short == "Live" %}
-      <li>In Studio, create a <a target="_blank" href="/live-module/creating-and-managing-live-events-using-live-module.html">live event using the Live module</a>.
-    {% endif %}        
-        <aside class="bcls-aside bcls-aside--information">Note: If you want to save the broadcast after it’s complete, make sure to check the <strong>Convert event to video asset when complete</strong> checkbox.</aside>
+        {% if site.product_short==&quot;VideoCloud&quot;またはsite.product_short=="Beacon"またはsite.product_short=="CorpTV"%}
+      <li>Studio で、<a target="_blank" href="/live/live-module/creating-and-managing-live-events-using-live-module.html"> Live モジュールを使用したライブ イベント</a>. {% endif %} {% if site.product_short == &quot;Live&quot; %}
+      <li>Studio で、<a target="_blank" href="/live-module/creating-and-managing-live-events-using-live-module.html"> Live モジュールを使用したライブ イベント</a>. {% endif %}<aside class="bcls-aside bcls-aside--information">ノート：完了後にブロードキャストを保存する場合は、必ず<strong>完了時にイベントをビデオ アセットに変換する</strong>チェックボックス。</aside>
       </li>
-      <li>When you create a live event, you will have access to the Streaming URL and Streaming Key.
+      <li>ライブイベントを作成すると、ストリーミング URL とストリーミングキーにアクセスできます。
         <ul>
-          <li><strong>Streaming URL</strong> - Streaming endpoint URL (You can find the endpoint URL in the Brightcove Live Control Room</li>
-          <li><strong>Streaming Key</strong> - Stream Name (In Brightcove, the Stream Name is always <strong>"alive"</strong>)</li>
+          <li><strong>ストリーミング URL</strong> - ストリーミング エンドポイント URL (エンドポイント URL は、Brightcove Live Control Room で見つけることができます</li>
+          <li><strong>ストリーミング キー</strong>- ストリーム名 (ブライトコーブでは、ストリーム名は常に<strong>&quot;生きている&quot;</strong> )</li>
         </ul>
       </li>
-      <li>Publish and embed the player for this live event in your website/intranet page, and note the page URL.
+      <li>Webサイト/イントラネットページに、このライブイベント用のプレーヤーを公開して埋め込み、ページのURLを書き留めます。
         <ul>
-          <li><strong>Conferences</strong> - For Zoom conferences, navigate to your <a target="_blank" href="https://zoom.us/meeting">scheduled meeting</a> list and select the meeting that you would like to stream.</li>
-          <li><strong>Webinars</strong> - For Zoom webinars, return to the <a target="_blank" href="https://zoom.us/webinar/list">Webinars screen</a>, and schedule a Webinar. Select the <strong>Live Streaming</strong> tab.</li>
+          <li><strong>カンファレンス</strong>- Zoom カンファレンスの場合は、<a target="_blank" href="https://zoom.us/meeting">予定された会議</a>ストリーミングしたいミーティングをリストから選択します。</li>
+          <li><strong>ウェビナー</strong>- Zoom ウェビナーについては、<a target="_blank" href="https://zoom.us/webinar/list">ウェビナー画面</a>、ウェビナーをスケジュールします。を選択<strong>生放送</strong>タブ。</li>
         </ul>
       </li>
-      <li>Scroll to the <strong>Live Streaming</strong> section
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/1.png" /></figure>
+      <li>までスクロール<strong>生放送</strong>セクション <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/1.png" /></figure>
       </li>
-      <li>Select the <strong>configure live stream settings</strong> link. Here you will enter the Streaming URL, Streaming Key and the URL of the page where you are hosting the player.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/2.png" /></figure>
+      <li>を選択<strong>ライブ ストリームの設定を構成する</strong>リンク。ここでは、ストリーミング URL、ストリーミングキー、およびプレーヤーをホストしているページの URL を入力します。 <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/2.png" /></figure>
       </li>
-      <li>From your Zoom call, click the <strong>MORE</strong> button, and select the <strong>Live on Custom Live Streaming Service</strong> option. This will start the live stream.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/3.png" /></figure>
+      <li>Zoom コールから、<strong>もっと</strong>ボタンをクリックして、<strong>カスタム ライブ ストリーミング サービスでのライブ配信</strong>オプション。これにより、ライブストリームが開始されます。 <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/zoom/3.png" /></figure>
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>   </section></article>

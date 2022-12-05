@@ -1,67 +1,35 @@
 <article class="bcls-article">
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>Cisco Webex is a video conferencing application that allows you to meet with other people online. To reach a larger audience, you can leverage Brightcove Live to stream your meeting for others to see. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Steps">Steps</h2>
-    <p> Follow these steps to host a meeting to Brightcove Live: </p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>Cisco Webex オンライン他の人と会うことができるビデオ会議アプリケーションです。より多くのオーディエンスにリーチするために、Brightcoveライブを活用してミーティングをストリーミングして、他のユーザーが見られるようにすることができます。 </p>  </section><section class="bcls-section">
+    <h2 id="Steps">ステップ</h2>
+    <p> Brightcoveライブでミーティングを主催するには、次の手順に従います。 </p>
     <ol class="bcls-tasklist">
-      <li> Log into your Cisco Webex platform as site admin. </li>
-      <li>Using either the <strong>Site Administration</strong> or <strong>Control Hub</strong>, enable <a href="https://help.webex.com/en-us/z4e7obb/Allow-Streaming-of-Cisco-Webex-Meetings-to-Facebook-Live">live stream access</a> to <strong>Other streaming services</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Live streaming providers" src="/assets/images/s-web-conferencing-img/webex/providers.png" />
-          <figcaption class="bcls-caption--image">Live streaming providers</figcaption>
-        </figure>
+      <li> サイト管理者として Cisco Webex プラットフォームにログインします。 </li>
+      <li>次のいずれかを使用して<strong>サイト管理</strong>また<strong>コントロール ハブ</strong>、 有効<a href="https://help.webex.com/en-us/z4e7obb/Allow-Streaming-of-Cisco-Webex-Meetings-to-Facebook-Live">ライブ ストリームへのアクセス</a>に<strong>その他のストリーミング サービス</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="ライブストリーミングプロバイダー" src="/assets/images/s-web-conferencing-img/webex/providers.png" /> <figcaption class="bcls-caption--image">ライブストリーミングプロバイダー</figcaption> </figure>
       </li>
-      <li>Using either the <strong>Site Administration</strong> or <strong>Control Hub</strong>, enable live streaming for individual users.
-        <p> Navigate to <strong>Users</strong> and select a user account to update. Click <strong>Advanced User Settings and Tracking Codes</strong> section for the user, and check the <strong>Enable Live Streaming</strong> box. </p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="User settings" src="/assets/images/s-web-conferencing-img/webex/user-settings.png" />
-          <figcaption class="bcls-caption--image">User settings</figcaption>
-        </figure>
+      <li>次のいずれかを使用して<strong>サイト管理</strong>また<strong>コントロール ハブ</strong>、個々のユーザーのライブ ストリーミングを有効にします。
+        <p> 案内する<strong>ユーザー</strong>更新するユーザー アカウントを選択します。クリック<strong>高度なユーザー設定とトラッキング コード</strong>ユーザーのセクションを確認し、<strong>ライブ ストリーミングを有効にする</strong>箱。 </p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="ユーザー設定" src="/assets/images/s-web-conferencing-img/webex/user-settings.png" /> <figcaption class="bcls-caption--image">ユーザー設定</figcaption> </figure>
       </li>
-      <li> Login to Studio. </li>
-      <li>Open the Live module and create a  live event. 
-{% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}
-          For details, see <a href="/live/live-module/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events using the Live Module</a>.
-{% endif %}
-{% if site.product_short == "Live" %}
-          For details, see <a href="/live-module/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events using the Live Module</a>.
-{% endif %}
-        <aside class="bcls-aside bcls-aside--information">Note: If you want to save the broadcast after it’s complete, make sure to check the <strong>Convert event to video asset when complete</strong> checkbox.</aside>
+      <li> Studioにログインします。 </li>
+      <li>Live モジュールを開き、ライブ イベントを作成します。 {% if site.product_short == &quot;Video Cloud&quot; or site.product_short == "Beacon" or site.product_short == "CorpTV" %} 詳細については、<a href="/live/live-module/creating-and-managing-live-events-using-live-module.html"> Live モジュールを使用したライブ イベントの作成と管理</a>. {% endif %} {% if site.product_short == &quot;ライブ&quot; %} 詳細については、<a href="/live-module/creating-and-managing-live-events-using-live-module.html"> Live モジュールを使用したライブ イベントの作成と管理</a>. {% endif %}<aside class="bcls-aside bcls-aside--information">ノート：完了後にブロードキャストを保存する場合は、必ず<strong>完了時にイベントをビデオ アセットに変換する</strong>チェックボックス。</aside>
       </li>
-      <li>When you create this event, you will be provided the following information:
+      <li>このイベントを作成すると、次の情報が提供されます。
         <ul>
-          <li> <strong>Endpoint (RTMP URL)</strong> - Streaming URL </li>
-          <li> <strong>Stream Name</strong> - Streaming key, where the value is always <strong>alive</strong> </li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Stream URL and name" src="/assets/images/s-web-conferencing-img/webex/stream-url.png" />
-          <figcaption class="bcls-caption--image">Stream URL and name</figcaption>
-        </figure>
+          <li> <strong>エンドポイント (RTMP URL)</strong> - ストリーミング URL </li>
+          <li> <strong>ストリーム名</strong>- ストリーミング キー。値は常に<strong>生きている</strong> </li>
+        </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="ストリーム URL と名前" src="/assets/images/s-web-conferencing-img/webex/stream-url.png" /> <figcaption class="bcls-caption--image">ストリーム URL と名前</figcaption> </figure>
       </li>
-      <li> Publish and embed the player for this live event into your website or intranet page. Copy the page URL to your clipboard. </li>
-      <li>Return to the Cisco Webex application. Start or schedule your Webex meeting. To do this, select the vertical 3-dot icon and select <strong>Start Live Streaming</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Start Webex meeting" src="/assets/images/s-web-conferencing-img/webex/start-streaming.png" />
-          <figcaption class="bcls-caption--image">Start Webex meeting</figcaption>
-        </figure>
+      <li> このライブイベントのプレーヤーを公開し、ウェブサイトまたはイントラネットページに埋め込みます。ページ URL をクリップボードにコピーします。 </li>
+      <li>Cisco Webex アプリケーションに戻ります。Webex ミーティングを開始またはスケジュールします。これを行うには、縦に並んだ 3 つのドットのアイコンを選択し、<strong>ライブストリーミングを開始</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Webex ミーティングを開始" src="/assets/images/s-web-conferencing-img/webex/start-streaming.png" /> <figcaption class="bcls-caption--image">Webex ミーティングを開始</figcaption> </figure>
       </li>
-      <li>In the <strong>Other streaming service information</strong> dialog, enter the following:
+      <li>の中に<strong>その他のストリーミングサービス情報</strong>ダイアログで、次のように入力します。
         <ul>
-          <li> <strong>Streaming service</strong>: Use <code translate="No">Brightcove</code> </li>
-          <li> <strong>Target stream link</strong>: Use the <strong>Endpoint (RTMP URL)</strong> value from Brightcove Live. </li>
-          <li> <strong>Target stream key</strong>: Use <code translate="No">alive</code> (It is always this value) </li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Streaming information" src="/assets/images/s-web-conferencing-img/webex/stream-info.png" />
-          <figcaption class="bcls-caption--image">Streaming information</figcaption>
-        </figure>
+          <li> <strong>ストリーミングサービス</strong>:使用する<code translate="No">ブライトコーブ</code> </li>
+          <li> <strong>ターゲット ストリーム リンク</strong>:使用<strong>エンドポイント (RTMP URL)</strong> Brightcove Live からの値。 </li>
+          <li> <strong>ターゲット ストリーム キー</strong>:使用する<code translate="No">生きている</code>(常にこの値です) </li>
+        </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="ストリーミング情報" src="/assets/images/s-web-conferencing-img/webex/stream-info.png" /> <figcaption class="bcls-caption--image">ストリーミング情報</figcaption> </figure>
       </li>
-      <li>That's it. You're live!
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Stream live to Brightcove" src="/assets/images/s-web-conferencing-img/webex/live-connection.png" />
-          <figcaption class="bcls-caption--image">Stream live to Brightcove</figcaption>
-        </figure>
+      <li>それだおまえは生きてる！ <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Brightcoveにライブストリーミング" src="/assets/images/s-web-conferencing-img/webex/live-connection.png" /> <figcaption class="bcls-caption--image">Brightcoveにライブストリーミング</figcaption> </figure>
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>   </section></article>

@@ -1,47 +1,30 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>INXPO is a video streaming platform, for creating TV-style event experiences. To reach a larger audience, you can leverage Brightcove Live to stream your event.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Steps">Steps</h2>
-    <p>Follow these steps to host a meeting to Brightcove Live:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>INXPO は、テレビスタイルのイベント体験を作成するためのビデオストリーミングプラットフォームです。より多くのオーディエンスにリーチするには、Brightcoveライブを活用してイベントをストリーミングできます。</p>  </section><section class="bcls-section">
+    <h2 id="Steps">ステップ</h2>
+    <p>Brightcoveライブでミーティングを主催するには、次の手順に従います。</p>
     <ol class="bcls-tasklist-restart">
-      <li>In Studio, create a 
-  {% if site.product_short == "Video Cloud" or site.product_short == "Beacon" or site.product_short == "CorpTV" %}        
-          <a href="/live/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank">live event using the Live module</a>.
-    {% endif %}
-      {% if site.product_short == "Live" %}
-          <a href="/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank">live event using the Live module</a>.
-    {% endif %}
-        <aside class="bcls-aside bcls-aside--information">If you want to save the broadcast after it’s complete, make sure to check the <strong>Convert event to video asset when complete</strong> checkbox!</aside>
+      <li>Studio で、{% if site.product_short == &quot;Video Cloud&quot; or site.product_short == "Beacon" or site.product_short == "CorpTV" %} を作成します。<a href="/live/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank"> Live モジュールを使用したライブ イベント</a>. {% endif %} {% if site.product_short == &quot;Live&quot; %}<a href="/live-module/creating-and-managing-live-events-using-live-module.html" target="_blank"> Live モジュールを使用したライブ イベント</a>. {% endif %}<aside class="bcls-aside bcls-aside--information">完了後にブロードキャストを保存する場合は、必ず<strong>完了時にイベントをビデオ アセットに変換する</strong>チェックボックス！</aside>
       </li>
-      <li>Once you create the live event, copy the Streaming RTMP URL and Streaming Key from the <strong>Control Room</strong> panel.
+      <li>ライブ イベントを作成したら、ストリーミング RTMP URL とストリーミング キーを<strong>制御室</strong>パネル。
         <ul>
-          <li><strong>Streaming RTMP URL</strong> - <strong>Streaming Endpoint URL</strong> (You can find the endpoint URL in the Brightcove Live Control Room</li>
-          <li><strong>Streaming Key</strong> - <strong>Stream Name</strong> (In Brightcove, the Stream Name is always <strong>"alive"</strong>)</li>
+          <li><strong>ストリーミング RTMP URL</strong> -<strong>ストリーミング エンドポイント URL</strong> (エンドポイント URL は、Brightcove Live Control Room で見つけることができます。</li>
+          <li><strong>ストリーミング キー</strong>-<strong>ストリーム名</strong>(ブライトコーブでは、ストリーム名は常に<strong>&quot;生きている&quot;</strong> )</li>
         </ul>
       </li>
-      <li>Publish and embed the player for this live event in your website/intranet page, and note the page URL.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Streaming Session">Configure the streaming session</h2>
-    <p>With the Streaming RTMP URL and Streaming Key you must configure them on the INXPO producer tool.</p>
+      <li>Webサイト/イントラネットページに、このライブイベント用のプレーヤーを公開して埋め込み、ページのURLを書き留めます。</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Streaming Session">ストリーミングセッションの設定</h2>
+    <p>ストリーミング RTMP URL とストリーミングキーを使用して、INXPO プロデューサーツールで設定する必要があります。</p>
     <ol class="bcls-tasklist-restart">
-      <li>Go to the INXPO producer tool and click the 3 dots icon to reach the Output Details section.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/3dots.png" /></figure>
+      <li>INXPO プロデューサーツールに移動し、3 つのドットアイコンをクリックして [出力詳細] セクションに移動します。 <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/3dots.png" /></figure>
       </li>
-      <li>Click the pencil icon. </li>
-      <li>Fill the following details with your Brightcove Live event credentials.
-        <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/RTMPOuput.png" /></figure>
+      <li>鉛筆アイコンをクリックします。 </li>
+      <li>以下の詳細に、Brightcoveのライブイベントの認証情報を入力します。 <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-web-conferencing-img/inxpo/RTMPOuput.png" /></figure>
       </li>
-      <li>In the <strong>Title</strong> field, add the Brightcove Live Stream Name.</li>
-      <li>In the <strong>Encoding Profile</strong> field, select the default encoding profile which settings define how the encoder compresses and delivers the webcast to attendees.</li>
-      <li>In the <strong>RTMP URL</strong> field, insert the Brightcove Streaming Endpoint URL.</li>
-      <li>Click the <strong>OK</strong> button.</li>
-    </ol>
-  </section>
-</article>
+      <li>の中に<strong>題名</strong>フィールドに、Brightcove ライブ ストリーム名を追加します。</li>
+      <li>の中に<strong>エンコーディング プロファイル</strong>フィールドで、エンコーダーが Web キャストを圧縮して出席者に配信する方法を定義するデフォルトのエンコード プロファイルを選択します。</li>
+      <li>の中に<strong>RTMP URL</strong>フィールドに、Brightcove ストリーミング エンドポイント URL を挿入します。</li>
+      <li>クリック<strong>わかった</strong>ボタン。</li>
+    </ol>   </section></article>
